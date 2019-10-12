@@ -90,6 +90,9 @@ pdf_button.click()
 
 handles = driver.window_handles
 
-# to close drivers
 driver.switch_to.window(handles[1])
-driver.close()
+download = driver.find_element_by_id('download')
+download.click()
+
+# to close drivers
+driver.quit()
